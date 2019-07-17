@@ -1,0 +1,82 @@
+h1 {
+    font-family: 'Paytone One';
+    text-align: center;
+}
+
+.main {
+    margin: auto;
+    width: 360px;
+    padding: 10px;
+}
+
+#matchSelection {
+    font-family: 'Passion One';
+    text-decoration: underline;
+    text-decoration: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+#informations {
+    font-family: 'Passion One';
+    text-decoration: bold;
+    text-align: right;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#textType {
+    margin-left: 10px;
+}
+
+#sandstorm {
+    font-family: 'Passion One';
+    text-decoration: underline;
+    text-decoration: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+#sandstormHabInformation {
+    font-family: 'Passion One';
+    font-size: 25px;
+    text-decoration: bold;
+    text-align: left;
+    float: left;
+}
+
+#sandstormScore {
+    font-family: 'Passion One';
+    font-size: 25px;
+    text-decoration: bold;
+    text-align: right;
+    float: right;
+}
+
+#radioType {
+	width: 15px;
+	height: 15px;
+}
+
+#sandstormScores {
+    font-family: 'Passion One';
+    font-size: 25px;
+    text-decoration: bold;
+    text-align: left;
+    width: 80px;
+    border-radius: 30px;
+    border-color: black;
+    top: 500px;
+}
+
+#textType {
+    width: 210px;
+    font-family: 'Passion One';
+    font-size: 25px;
+    border-radius: 30px;
+    border-color: black;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
