@@ -44,6 +44,7 @@ p {
     text-align: right;
     float: left;
     width: 160px;
+    height: 100px;
 }
 
 #sandstormScore {
@@ -52,7 +53,7 @@ p {
     text-decoration: bold;
     text-align: right;
     float: right;
-    height: 84px;
+    height: 100px;
 }
 
 #sandstormScores {
