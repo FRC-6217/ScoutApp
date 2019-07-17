@@ -3,18 +3,18 @@ h1 {
     text-align: center;
 }
 
-.main {
-    margin: auto;
-    width: 360px;
-    padding: 10px;
-}
-
-#matchSelection {
+p {
     font-family: 'Passion One';
+    font-size: 25px;
     text-decoration: underline;
     text-decoration: bold;
     text-align: center;
-    font-size: 25px;
+}
+
+.main {
+    margin: auto;
+    width: 320px;
+    padding: 10px;
 }
 
 #informations {
@@ -27,24 +27,23 @@ h1 {
 }
 
 #textType {
-    margin-left: 10px;
-}
-
-#sandstorm {
     font-family: 'Passion One';
-    text-decoration: underline;
-    text-decoration: bold;
-    text-align: center;
     font-size: 25px;
+    border-radius: 30px;
+    border-color: black;
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
 }
 
 #sandstormHabInformation {
     font-family: 'Passion One';
     font-size: 25px;
     text-decoration: bold;
-    text-align: left;
+    text-align: right;
     float: left;
-    width: 210px;;
+    width: 160px;
 }
 
 #sandstormScore {
@@ -61,18 +60,10 @@ h1 {
     font-size: 25px;
     text-decoration: bold;
     text-align: left;
-    width: 80px;
     border-radius: 30px;
     border-color: black;
+    width: 80px;
     top: 500px;
-}
-
-#postSandstorm {
-    font-family: 'Passion One';
-    text-decoration: underline;
-    text-decoration: bold;
-    text-align: center;
-    font-size: 25px;
 }
 
 #postSandstormDiv {
@@ -89,9 +80,9 @@ h1 {
     font-size: 25px;
     text-decoration: bold;
     text-align: left;
-    width: 80px;
     border-radius: 30px;
     border-color: black;
+    width: 80px;
     top: 500px;
 }
 
@@ -101,24 +92,13 @@ h1 {
     text-decoration: bold;
     text-align: right;
     float: right;
-    height: 84px;
-}
-
-#endgamediv {
-    font-family: 'Passion One';
-    font-size: 25px;
-    text-align: center;
-    text-decoration: bold;
-    text-decoration: underline;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100px;
 }
 
 #endgame {
-    text-align: center;
     font-family: 'Passion One';
     font-size: 25px;
+    text-align: center;
 }
 
 #radioType {
@@ -126,32 +106,19 @@ h1 {
 	height: 15px;
 }
 
-#textType {
-    width: 210px;
-    font-family: 'Passion One';
-    font-size: 25px;
-    border-radius: 30px;
-    border-color: black;
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
-}
-
 #submit {
-    width: 100px;
     margin-left: auto;
     margin-right: auto;
+    width: 100px;
     padding: 10px;
 }
 
 #submitone {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
     font-family: 'Passion One';
     font-size: 25px;
-    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
     border-color: black;
-    color: white;
+    border-radius: 50px;
+    width: 100px;
 }
