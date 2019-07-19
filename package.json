@@ -20,6 +20,7 @@
     "cfenv": "^1.2.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.x",
+    "ibm_db2": "^3.0.0",
     "mongodb": "^3.0.10"
   },
   "author": "IBM Corp",
