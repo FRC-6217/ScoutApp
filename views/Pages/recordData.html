@@ -28,72 +28,74 @@
         <h1>RECORD DATA</h1>
     </head>
     <body background="../Pictures/Web Background - Desktop.png">
-        <div class="main container">
-            <div class="container">
-                <p>Match Selection</p>
+        <form method="POST">
+            <div action="../Scripts/confirmation.js" class="main container">
+                <div class="container">
+                    <p>Match Selection</p>
+                </div>
+                <div class="container" id="informations">
+                    <label class="container" id="scout" name="scout">Scout:
+                        <input id="textType" type="text">
+                    </label>
+                    <label class="container" id="competition" name="competition">Competition:
+                        <input id="textType" type="text">
+                    </label> 
+                    <label class="container" id="match" name="match">Match:
+                        <input id="textType" type="text">
+                    </label> 
+                    <label class="container" id="robot" name="robot">Robot:
+                        <input id="textType" type="text">
+                    </label> 
+                </div>
+                <div class="container">
+                    <p>Sandstorm</p>
+                </div>
+                <div class="container" id="sandstormHabInformation">
+                    <label class="container">Did not leave:
+                        <input id="radioType" type="radio" name="habSandstorm">
+                    </label><br>
+                    <label class="container">Left HAB 1:
+                        <input id="radioType" type="radio" name="habSandstorm">
+                    </label><br>
+                    <label class="container">Left HAB 2:
+                        <input id="radioType" type="radio" name="habSandstorm">
+                    </label><br>
+                </div>
+                <div class="container" id="sandstormScore">
+                    <label>Hatch: <input id="sandstormScores" type="number" name="sandstormHatch"></label><br>
+                    <label>Cargo: <input id="sandstormScores" type="number" name="sandstormCargo"></label><br>
+                </div>
+                <div class="container">
+                    <p>Post-Sandstorm</p>
+                </div>
+                <div class="container" id="postSandstormDiv">
+                    <label>Hatch: <input id="postSandstormInformation" type="number" name="postHatch"></label><br>
+                    <label>Cargo: <input id="postSandstormInformation" type="number" name="postCargo"></label><br>
+                </div>
+                <div class="container" id="defense">
+                    <label>Defense: <input id="checkbox" type="checkbox" name="defense"></label><br>
+                </div>
+                <div class="container">
+                    <p>Endgame</p>
+                </div>
+                <div class="container" id="endgame">
+                    <label class="container">Return 1:
+                        <input id="radioType" type="radio" name="endHab">
+                    </label><br>
+                    <label class="container">Return 2:
+                        <input id="radioType" type="radio" name="endHab">
+                    </label><br>
+                    <label class="container">Return 3:
+                        <input id="radioType" type="radio" name="endHab">
+                    </label><br>
+                </div>
+                <div id="submit">
+                    <input type="submit" id="submitone">
+                </div>
             </div>
-            <div class="container" id="informations">
-                <label class="container" id="scout" name="scout">Scout:
-                    <input id="textType" type="text">
-                </label>
-                <label class="container" id="competition">Competition:
-                    <input id="textType" type="text">
-                </label> 
-                <label class="container" id="match">Match:
-                    <input id="textType" type="text">
-                </label> 
-                <label class="container" id="robot">Robot:
-                    <input id="textType" type="text">
-                </label> 
-            </div>
-            <div class="container">
-                <p>Sandstorm</p>
-            </div>
-            <div class="container" id="sandstormHabInformation">
-                <label class="container">Did not leave:
-                    <input id="radioType" type="radio" name="radio">
-                </label><br>
-                <label class="container">Left HAB 1:
-                    <input id="radioType" type="radio" name="radio">
-                </label><br>
-                <label class="container">Left HAB 2:
-                    <input id="radioType" type="radio" name="radio">
-                </label><br>
-            </div>
-            <div class="container" id="sandstormScore">
-                Hatch: <input id="sandstormScores" type="number"><br>
-                Cargo: <input id="sandstormScores" type="number"><br>
-            </div>
-            <div class="container">
-                <p>Post-Sandstorm</p>
-            </div>
-            <div class="container" id="postSandstormDiv">
-                Hatch: <input id="postSandstormInformation" type="number"><br>
-                Cargo: <input id="postSandstormInformation" type="number"><br>
-            </div>
-            <div class="container" id="defense">
-                Defense: <input id="checkbox" type="checkbox"><br>
-            </div>
-            <div class="container">
-                <p>Endgame</p>
-            </div>
-            <div class="container" id="endgame">
-                <label class="container">Return 1:
-                    <input id="radioType" type="radio" name="radio">
-                </label><br>
-                <label class="container">Return 2:
-                    <input id="radioType" type="radio" name="radio">
-                </label><br>
-                <label class="container">Return 3:
-                    <input id="radioType" type="radio" name="radio">
-                </label><br>
-            </div>
-            <div id="submit">
-                <input type="submit" id="submitone">
-            </div>
-        </div>
-        <script>
-            
-        </script>
+            <script>
+                
+            </script>
+        </form>
     </body>
 </html>
