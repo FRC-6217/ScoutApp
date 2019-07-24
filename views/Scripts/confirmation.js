@@ -1,13 +1,15 @@
 var ibmdb = require('ibm_db');
+var Db2Store = require('connect-db2')(session);
 var express = require('express');
+var bodyParser = require('body-parser');
 
-ibmdb.open("DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP", function (err, conn) {
-    if (err) return console.log(err);
+var options = {
+    dsn: 'DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=pkq88236;PWD=j2shl+hchbp05t3x;'
+};
 
-    var sql = 'INSERT INTO scout'
-                    
-    //write the code here;
-    conn.close(function () {
-        console.log('done');
-    })
-})
+var sessionStore = new Db2Store(options);
+applicationCache.use(session({
+    store: sessionStore,
+    secret: 'keyboard cat'
+}));
+
