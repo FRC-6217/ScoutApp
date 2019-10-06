@@ -1,10 +1,12 @@
 h1 {
     font-family: 'Paytone One';
+    color: white;
     text-align: center;
 }
 
 p {
     font-family: 'Passion One';
+    color: white;
     font-size: 25px;
     text-decoration: underline;
     text-decoration: bold;
@@ -12,6 +14,7 @@ p {
 }
 
 .main {
+    color: white;
     margin: auto;
     width: 320px;
     padding: 10px;
@@ -29,9 +32,8 @@ p {
 #textType {
     font-family: 'Passion One';
     font-size: 25px;
-    border-radius: 30px;
-    border-color: black;
-    width: 170px;
+    border-radius: 20px;
+    width: 55%;
     margin: 0;
     padding: 0;
     padding-left: 10px;
@@ -47,7 +49,7 @@ p {
     height: 100px;
 }
 
-#sandstormScore {
+#sandstormScoreDiv {
     font-family: 'Passion One';
     font-size: 25px;
     text-decoration: bold;
@@ -62,9 +64,11 @@ p {
     text-decoration: bold;
     text-align: left;
     border-radius: 30px;
-    border-color: black;
-    width: 80px;
+    width: 50px;
     top: 500px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
 }
 
 #postSandstormDiv {
@@ -82,9 +86,11 @@ p {
     text-decoration: bold;
     text-align: left;
     border-radius: 30px;
-    border-color: black;
-    width: 80px;
+    width: 50px;
     top: 500px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
 }
 
 #defense {
@@ -110,16 +116,14 @@ p {
 #submit {
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
     padding: 10px;
 }
 
-#submitone {
+#submitall {
+    border-color: black;
     font-family: 'Passion One';
-    font-size: 25px;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-color: black;
-    border-radius: 50px;
-    width: 100px;
+    border-radius: 20px;
 }

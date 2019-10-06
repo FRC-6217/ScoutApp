@@ -24,6 +24,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="../Logo/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <script src="../Scripts/db2Connection.js"></script>
+
         <title>Scout Record</title>
         <h1>RECORD DATA</h1>
     </head>
@@ -61,16 +64,16 @@
                         <input id="radioType" type="radio" name="habSandstorm">
                     </label><br>
                 </div>
-                <div class="container" id="sandstormScore">
-                    <label>Hatch: <input id="sandstormScores" type="number" name="sandstormHatch"></label><br>
-                    <label>Cargo: <input id="sandstormScores" type="number" name="sandstormCargo"></label><br>
+                <div class="container" id="sandstormScoreDiv">
+                    <label>Hatch: <input id="sandstormScores" type="number" min="0" name="sandstormHatch"></label><br>
+                    <label>Cargo: <input id="sandstormScores" type="number" min="0" name="sandstormCargo"></label><br>
                 </div>
                 <div class="container">
                     <p>Post-Sandstorm</p>
                 </div>
                 <div class="container" id="postSandstormDiv">
-                    <label>Hatch: <input id="postSandstormInformation" type="number" name="postHatch"></label><br>
-                    <label>Cargo: <input id="postSandstormInformation" type="number" name="postCargo"></label><br>
+                    <label>Hatch: <input id="postSandstormInformation" type="number" min="0" name="postHatch"></label><br>
+                    <label>Cargo: <input id="postSandstormInformation" type="number" min="0" name="postCargo"></label><br>
                 </div>
                 <div class="container" id="defense">
                     <label>Defense: <input id="checkbox" type="checkbox" name="defense"></label><br>
@@ -90,12 +93,9 @@
                     </label><br>
                 </div>
                 <div id="submit">
-                    <input type="submit" id="submitone">
+                    <center><input type="submit" id="submitall" value="Submit"></center>
                 </div>
             </div>
-            <script>
-                
-            </script>
         </form>
     </body>
 </html>
