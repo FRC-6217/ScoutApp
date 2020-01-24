@@ -1,5 +1,0 @@
----
-applications:
- - name: "ScoutApp"
-   random-route: true
-   memory: 256M
