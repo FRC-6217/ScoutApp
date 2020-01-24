@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='../Scripts/mysql.js'>
+        <link href='../Scripts/submit.js'>
+        <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+        <link rel="apple-touch-icon" sizes="57x57" href="../Logo/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../Logo/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../Logo/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../Logo/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../Logo/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../Logo/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../Logo/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../Logo/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../Logo/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../Logo/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../Logo/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Logo/favicon-16x16.png">
+        <link rel="manifest" href="../Logo/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../Logo/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Scout Record</title>
+        <h1>RECORD DATA</h1>
+    </head>
+    <body background="../Pictures/Web Background - Desktop.jpg">
+        <form method="POST" action="../Scripts/db2Connection.js"><!--change this method-->
+            <div action="../Scripts/confirmation.js" class="main container">
+                <div class="container">
+                    <p>Match Selection</p>
+                </div>
+                <div class="container" id="informations">
+                    <label class="container" id="scout" name="scout">Scout:
+                        <input id="textType" type="text">
+                    </label>
+                    <label class="container" id="competition" name="competition">Competition:
+                        <input id="textType" type="text">
+                    </label>
+                    <label class="container" id="match" name="match">Match:
+                        <input id="textType" type="text">
+                    </label>
+                    <label class="container" id="robot" name="robot">Robot:
+                        <input id="textType" type="text">
+                    </label>
+                </div>
+                <div class="container">
+                    <p>Sandstorm</p>
+                </div>
+                <div class="container" id="sandstormHabInformation">
+                    <label class="container">Did not leave:
+                        <input id="radioType" type="radio" name="habSandstorm">
+                    </label><br>
+                    <label class="container">Left HAB 1:
+                        <input id="radioType" type="radio" name="habSandstorm">
+                    </label><br>
+                    <label class="container">Left HAB 2:
+                        <input id="radioType" type="radio" name="habSandstorm">
+                    </label><br>
+                </div>
+                <div class="container" id="sandstormScoreDiv">
+                    <label>Hatch: <input id="sandstormScores" type="number" min="0" name="sandstormHatch"></label><br>
+                    <label>Cargo: <input id="sandstormScores" type="number" min="0" name="sandstormCargo"></label><br>
+                </div>
+                <div class="container">
+                    <p>Post-Sandstorm</p>
+                </div>
+                <div class="container" id="postSandstormDiv">
+                    <label>Hatch: <input id="postSandstormInformation" type="number" min="0" name="postHatch"></label><br>
+                    <label>Cargo: <input id="postSandstormInformation" type="number" min="0" name="postCargo"></label><br>
+                </div>
+                <div class="container" id="defense">
+                    <label>Defense: <input id="checkbox" type="checkbox" name="defense"></label><br>
+                </div>
+                <div class="container">
+                    <p>Endgame</p>
+                </div>
+                <div class="container" id="endgame">
+                    <label class="container">Return 1:
+                        <input id="radioType" type="radio" name="endHab">
+                    </label><br>
+                    <label class="container">Return 2:
+                        <input id="radioType" type="radio" name="endHab">
+                    </label><br>
+                    <label class="container">Return 3:
+                        <input id="radioType" type="radio" name="endHab">
+                    </label><br>
+                </div>
+                <div id="submit">
+                    <center><input type="submit" id="submitall" value="Submit"></center>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
